@@ -15,6 +15,7 @@ import createWidget from 'dojo-widgets/createWidget';
 import projector from 'dojo-widgets/projector';
 import { Child } from 'dojo-widgets/mixins/createParentMixin';
 import createAction from 'dojo-actions/createAction';
+import * as pageTitle from 'dojo-core/text!./text/textFile.txt';
 
 import * as DateTextBox from 'dijit/form/DateTextBox';
 
@@ -34,7 +35,7 @@ const listItems = [
  */
 const widgetStore = createMemoryStore({
 	data: [
-		{ id: 'header', label: 'Dojo 2 Example Application'},
+		{ id: 'header', label: pageTitle},
 		{ id: 'tabbed-panel', classes: [ 'pad-1em' ] },
 		{ id: 'tab-1', label: 'Tab 1', closeable: false },
 		{ id: 'layout-container', classes: [ 'horizontal' ] },

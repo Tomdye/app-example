@@ -6,7 +6,7 @@
 		"noImplicitAny": true,
 		"outDir": "_build/",
 		"removeComments": false,
-		"sourceMap": true,
+		"sourceMap": false,
 		"target": "es5"
 	},
 	"filesGlob": [
@@ -32,5 +32,8 @@
 		"./tests/typings/node/node.d.ts",
 		"./tests/typings/tsd.d.ts",
 		"./tests/unit/all.ts"
-	]
+	],
+	"atom": {
+		"rewriteTsconfig": true
+	}
 }
