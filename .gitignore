@@ -6,9 +6,8 @@
 !/tasks/*.js
 dist
 _build
-/node_modules/*
-!/node_modules/dojo-widgets/
-!/node_modules/dojo-widgets/**
+node_modules
+typings
 bower_components
 tests/typings/dist/
 .baseDir.ts
